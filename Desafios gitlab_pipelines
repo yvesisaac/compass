@@ -7,3 +7,25 @@ Clone esse repositório na sua máquina
 com: git clone + link do gitlab 
 
 Crie o arquivo helloworld.yml
+
+stages:
+  - build
+  - test
+  - deploy
+
+build job:
+stage: build
+scipt:
+  - echo "Compilling code..."
+  - echo "Compile complete"
+
+hello_world:
+stage: test
+script:
+  - echo "Hello World"
+
+
+Abra um terminal no vscode e use os seguintes comandos:
+git add . 
+git commit -m 'add file'
+git push origin main
