@@ -29,3 +29,41 @@ Abra um terminal no vscode e use os seguintes comandos:
 git add . 
 git commit -m 'add file'
 git push origin main
+
+
+
+
+Desafio NGINX
+
+crie o arquivo nginx.yml
+
+stages:
+  - build
+  - test
+  - deploy
+
+build-job: 
+  stage: build
+  script:
+    - echo "Compiling the code..."
+    - echo "Compile complete."
+
+hello_world:
+stage: test
+script:
+  - "Hello World"
+
+deploy_nginx:
+  stage: deploy
+  script:
+    - apt-get update -qy
+    - apt-get install -y nginx
+    - service nginx start
+
+
+Abra um terminal no vscode e use os seguintes comandos:
+git add . 
+git commit -m 'add file'
+git push origin main
+
+No gitlab vá em Build e em pipelines e verifique se a pipeline executou corretamente
