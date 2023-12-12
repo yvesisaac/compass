@@ -35,4 +35,17 @@ Selecione a opção CONFIGURAÇÕES na barra superior a direita, isso vai abrir 
 Selecione a opção ARMAZENAMENTO, clique no espaço vazio abaixo de Controladora:IDE
 Clique no icone de CD, no item DRIVE OPTICO, e selecione a Imagem ISO que baixou, no meu caso está salvo como "OracleLinux-R8-U8-X86_64-dvd.iso", em seguida clique em OK.
 
+Instalando o Linux na VM
+No canto superior a direita, clique em INICIAR, isso vai fazer com que inicie a VM e comece a instalação do Linux.
+Pressione Enter
+Aguarde finalizar a instalação.
 
+Configurando
+Selecione o Idioma e CONTINUAR
+Na Seção SISTEMA selecione REDE E NOME DO HOST, e o ligue depois clique em PRONTO
+Ainda na seção SISTEMA, selecione DESTINO DA INSTALAÇÃO, selecione o disco, e na seção CONFIGURAÇÃO DE ARMAZENAMENTO, deixe marcada a opção AUTOMÁTICA
+Na seção SISTEMA selecione KDUMP, e selecione a opção ATIVAR KDUMP, e pronto.
+A opção mais importante na seção PROGRAMA é a opção FONTE DE INSTALAÇÃO, clique nessa opção e selecione a opção MÍDIA DE INSTALAÇÃO DETECTADA AUTOMATICAMENTE. Depois disso, clique no botão VERIFICAR.
+Abra a opção Seleção de programas na seção Programas mantenha a opção SERVIDOR COM GUI, e selecione a opção FERRAMENTAS DE DESENVOLVIMENTO no menu a direita, por fim clique em pronto. 
+Agora, na Seção CONFIGURAÇÕES DO USUARIO, selecione a opção SENHA ROOT, e coloque uma senha, depois clique em PRONTO 
+Depois de atualizar todas essas informações pode dar inicio a instalação do Software, no botão INICIAR A INSTALAÇÃO e aguarde a instalação ser feita. 10. Quando finalizado a instalção clique em REINICIAR O SISTEMA
