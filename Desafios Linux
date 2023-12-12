@@ -53,3 +53,87 @@ Quando finalizado a instalção clique em REINICIAR O SISTEMA
 
 
 DESAFIO 2
+
+Inicie 2 maquinas como no inicio do desafio anterior
+
+Configue o IP Fixo
+Edite o arquivo de configuração de rede
+Use o comando:
+
+sudo vim /etc/sysconfig/network-scripts/ifcfg-NOME_DA_SUA_INTERFACE
+
+Quando estiver dentro do arquivo aperte I para entrar no modo INSERT
+
+Adicione ao seu código:
+
+BOOTPROTO=static
+IPADDR=SEU_IP
+NETMASK=SUA_MASCARA
+GATEWAY=SEU_GATEWAY
+
+Depois de editar, Aperte Esc (para entrar no modo comando), e use o comando para sair e salvar:
+:wq
+
+Reinicie o serviço de rede para aplicar as alterações:
+sudo systemctl restart NetworkManager
+
+Verifique se as novas informações foram atualizadas:
+Use o comando:
+
+ip address
+
+VM 1
+Instale o servidor NFS:
+sudo dnf install -y nfs-utils
+
+Depois de instalado crie uma pasta compartilhada:
+sudo mkdir /nfs-share
+
+Crie alguns arquivos teste
+sudo fallocate -l 10MB /nfs-share/file1
+echo "This is a shared text file." | sudo tee /nfs-share/shared-text.txt > /dev/null
+
+Verifique se os arquivos foram criados com sucesso.
+ls -lh /nfs-share
+
+É importante configurar as permissões da pasta, exemplo:
+sudo chmod -R 777 /nfs-share
+
+Editando o arquivo /etc/exports
+Para editar o arquivo:
+echo "/nfs-share  <CLIENTE_IP>(rw)" | sudo tee -a /etc/exports > /dev/null
+Substitua <CLIENTE_IP> pelo endereço IP da sua segunda VM.
+
+Reinicie o Servidor com o comando: 
+sudo systemctl restart nfs-server
+
+Defina o firewall para permitir tráfego NFS.
+sudo firewall-cmd --permanent --zone=public --add-service=nfs
+sudo firewall-cmd --reload
+sudo firewall-cmd --list-all
+
+Para ativar e iniciar o serviço NFS.
+sudo systemctl enable --now nfs-server
+showmount -e
+
+
+VM 2 (Cliente NFS):
+Primeiro instale o cliente NFS:
+sudo dnf install -y nfs-utils
+Crie um diretório para montar a pasta compartilhada do servidor.
+
+Montar uma pasta significa torná-la acessível e disponível para leitura e gravação.
+
+sudo mount <SERVER_IP>:/nfs-share /nfs-mount
+Substitua <Server_IP> pelo o endereço IP da sua primeira VM
+
+Obtenha uma lista de diretorios:
+ls -lh /nfs-mount
+
+Teste o acesso ao compartilhamento NFS:
+echo "Hello World!" >> /nfs-mount/shared-text.txt
+cat /nfs-mount/shared-text.txt
+
+
+
+
