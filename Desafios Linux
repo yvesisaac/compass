@@ -41,11 +41,15 @@ Pressione Enter
 Aguarde finalizar a instalação.
 
 Configurando
-Selecione o Idioma e CONTINUAR
-Na Seção SISTEMA selecione REDE E NOME DO HOST, e o ligue depois clique em PRONTO
-Ainda na seção SISTEMA, selecione DESTINO DA INSTALAÇÃO, selecione o disco, e na seção CONFIGURAÇÃO DE ARMAZENAMENTO, deixe marcada a opção AUTOMÁTICA
+1 Selecione o Idioma e CONTINUAR
+2 Na Seção SISTEMA selecione REDE E NOME DO HOST, e o ligue depois clique em PRONTO
+3 Ainda na seção SISTEMA, selecione DESTINO DA INSTALAÇÃO, selecione o disco, e na seção CONFIGURAÇÃO DE ARMAZENAMENTO, deixe marcada a opção AUTOMÁTICA
 Na seção SISTEMA selecione KDUMP, e selecione a opção ATIVAR KDUMP, e pronto.
-A opção mais importante na seção PROGRAMA é a opção FONTE DE INSTALAÇÃO, clique nessa opção e selecione a opção MÍDIA DE INSTALAÇÃO DETECTADA AUTOMATICAMENTE. Depois disso, clique no botão VERIFICAR.
-Abra a opção Seleção de programas na seção Programas mantenha a opção SERVIDOR COM GUI, e selecione a opção FERRAMENTAS DE DESENVOLVIMENTO no menu a direita, por fim clique em pronto. 
-Agora, na Seção CONFIGURAÇÕES DO USUARIO, selecione a opção SENHA ROOT, e coloque uma senha, depois clique em PRONTO 
-Depois de atualizar todas essas informações pode dar inicio a instalação do Software, no botão INICIAR A INSTALAÇÃO e aguarde a instalação ser feita. 10. Quando finalizado a instalção clique em REINICIAR O SISTEMA
+4 A opção mais importante na seção PROGRAMA é a opção FONTE DE INSTALAÇÃO, clique nessa opção e selecione a opção MÍDIA DE INSTALAÇÃO DETECTADA AUTOMATICAMENTE. Depois disso, clique no botão VERIFICAR.
+5 Abra a opção Seleção de programas na seção Programas mantenha a opção SERVIDOR COM GUI, e selecione a opção FERRAMENTAS DE DESENVOLVIMENTO no menu a direita, por fim clique em pronto. 
+6 Agora, na Seção CONFIGURAÇÕES DO USUARIO, selecione a opção SENHA ROOT, e coloque uma senha, depois clique em PRONTO 
+Depois de atualizar todas essas informações pode dar inicio a instalação do Software, no botão INICIAR A INSTALAÇÃO e aguarde a instalação ser feita. 
+Quando finalizado a instalção clique em REINICIAR O SISTEMA
+
+
+DESAFIO 2
