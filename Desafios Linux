@@ -9,3 +9,7 @@ Download Oracle Linux 8
 https://yum.oracle.com/oracle-linux-isos.html
 
 Criar uma VM
+Abra o Virtual Box
+Clique em NOVO
+Nomeie sua VM
+Na Opção Imagem ISO, selecione a o arquivo ISO do Oracle Linux que vc baixou anteriormente
