@@ -1,3 +1,5 @@
+DESAFIO 1
+
 Virtual Box
 
 Dowload do Virtual Box
@@ -13,3 +15,24 @@ Abra o Virtual Box
 Clique em NOVO
 Nomeie sua VM
 Na Opção Imagem ISO, selecione a o arquivo ISO do Oracle Linux que vc baixou anteriormente
+Clique em Próximo
+Coloque um nome de usuário e senha
+Na opção NOME DO SERVIDOR, coloque um nome simples sem espaços só para identificar o seu servidor, 
+Clique em Próximo
+
+Selecionando Hardware
+Use no mínimo 4GB de RAM
+Clique PRÓXIMO
+
+Disco rigido
+Deixe selecionado a opção CRIAR UM NOVO DISCO RÍGIDO VIRTUAL AGORA
+No item TAMANHO DO DISCO, Selecione no mínimo 12GB
+Clique em PRÓXIMO.
+E FINALIZAR
+
+Adicionando o Linux a sua VM
+Selecione a opção CONFIGURAÇÕES na barra superior a direita, isso vai abrir um menu de opções.
+Selecione a opção ARMAZENAMENTO, clique no espaço vazio abaixo de Controladora:IDE
+Clique no icone de CD, no item DRIVE OPTICO, e selecione a Imagem ISO que baixou, no meu caso está salvo como "OracleLinux-R8-U8-X86_64-dvd.iso", em seguida clique em OK.
+
+
